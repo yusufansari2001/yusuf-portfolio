@@ -1,5 +1,5 @@
 const config = {
-  resumeUrl: "https://drive.google.com/file/d/REPLACE_WITH_YOUR_RESUME_ID/view",
+  resumeUrl: "https://drive.google.com/file/d/12I6xpV-m4I6fPzPg4tiUD4bpH71EOq_2/view?usp=sharing",
   skills: [
     {
       title: "Backend and Java Ecosystem",
@@ -33,36 +33,38 @@ const config = {
   ],
   experience: [
     {
-      title: "Backend Developer",
+      title: "Java Developer | Tata Consultancy Services (TCS)",
       description:
-        "Add your company, timeline, and top impact points here. Example: built resilient APIs, reduced latency, improved service reliability.",
-      tech: ["Java", "Spring Boot", "Microservices"]
+        "Dec 2023 - Present | Hyderabad, Telangana. Build and optimize backend telecom provisioning services using Java and Spring Boot, with focus on scalable APIs, data validation workflows, and reliable system integration across multi-vendor environments.",
+      tech: ["Java", "Spring Boot", "Microservices", "Oracle SQL", "Redis", "Kafka", "JUnit", "Jenkins"]
     }
   ],
   achievements: [
     {
-      title: "High-Impact Delivery",
+      title: "Backend Modernization Impact",
       description:
-        "Add your strongest measurable wins here (performance gains, cost reduction, delivery speed, scale milestones).",
-      tech: ["Performance", "Scalability", "Ownership"]
+        "Improved maintainability and delivery velocity by driving modular backend design, reusable components, and cleaner service boundaries for enterprise Java applications.",
+      tech: ["Maintainability", "Scalability", "Service Design"]
     },
     {
-      title: "Engineering Leadership",
+      title: "Quality and Automation",
       description:
-        "Add achievements such as mentoring, architecture ownership, process improvement, and cross-team collaboration.",
-      tech: ["Mentoring", "Design Reviews", "Delivery Excellence"]
+        "Strengthened release reliability through API regression checks, CI/CD automation, and proactive validation controls in provisioning workflows.",
+      tech: ["Regression Testing", "CI/CD", "Reliability"]
     }
   ],
   certifications: [
     {
       title: "AWS Certified Cloud Practitioner",
       description: "Foundational cloud certification validating AWS platform, security, and architecture basics.",
-      tech: ["AWS", "Cloud"]
+      tech: ["AWS", "Cloud"],
+      link: "https://www.credly.com/badges/19750322-f347-42f9-933f-ac544c5d7546"
     },
     {
       title: "AI Practitioner",
       description: "Certification covering core AI concepts and practical AI/ML application fundamentals.",
-      tech: ["AI", "ML"]
+      tech: ["AI", "ML"],
+      link: "https://www.credly.com/badges/2b9765f5-bf00-491f-a390-405a2e8c2f2a"
     }
   ],
   projects: [
@@ -86,12 +88,12 @@ const config = {
     {
       title: "LeetCode",
       description: "Track my coding practice, problem-solving consistency, and algorithmic growth.",
-      link: "https://leetcode.com/"
+      link: "https://leetcode.com/u/yousuf89/"
     },
     {
       title: "GeeksforGeeks",
       description: "My profile for DSA practice, coding articles, and technical learning progress.",
-      link: "https://www.geeksforgeeks.org/"
+      link: "https://www.geeksforgeeks.org/profile/mdyousufasif6"
     }
   ]
 };
@@ -124,6 +126,7 @@ function renderCardSection(gridId, records) {
       <h3>${record.title}</h3>
       <p>${record.description}</p>
       <div class="project-tech">${chips}</div>
+      ${record.link ? `<div class="project-tech"><a class="btn btn-outline" href="${record.link}" target="_blank" rel="noopener">View Credential</a></div>` : ""}
     `;
 
     grid.appendChild(card);
