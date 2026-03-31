@@ -18,7 +18,11 @@
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certifications">Certifications</a>
       <a href="#projects">Projects</a>
+      <a href="#coding">Coding</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn-outline resume-link" href="#" target="_blank" rel="noopener">Resume</a>
@@ -41,9 +45,12 @@
       </div>
 
       <div class="hero-panel">
-        <div class="stat-card">
-          <span>Core Stack</span>
-          <strong>Java, Spring Boot, SQL</strong>
+        <div class="profile-card">
+          <div class="profile-frame">
+            <img id="profile-photo" src="assets/profile.jpg" alt="Yusuf profile photo" />
+            <div id="profile-fallback" class="profile-fallback">YM</div>
+          </div>
+          <p>Add your photo at <code>assets/profile.jpg</code></p>
         </div>
         <div class="stat-card">
           <span>AI Stack</span>
@@ -69,12 +76,32 @@
       <div id="skill-grid" class="skill-grid"></div>
     </section>
 
+    <section id="experience" class="container section">
+      <h2>Experience</h2>
+      <div id="experience-grid" class="project-grid"></div>
+    </section>
+
+    <section id="achievements" class="container section">
+      <h2>Achievements</h2>
+      <div id="achievement-grid" class="project-grid"></div>
+    </section>
+
+    <section id="certifications" class="container section">
+      <h2>Certifications</h2>
+      <div id="certification-grid" class="project-grid"></div>
+    </section>
+
     <section id="projects" class="container section">
       <div class="section-head">
         <h2>Featured Projects</h2>
         <p>Placeholders are ready. We will replace these with your actual project details next.</p>
       </div>
       <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <section id="coding" class="container section">
+      <h2>Coding Profiles</h2>
+      <div id="coding-grid" class="project-grid"></div>
     </section>
 
     <section id="contact" class="container section contact">
