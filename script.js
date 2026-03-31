@@ -104,20 +104,6 @@ const config = {
       description: "LLM-powered utility to tailor resumes against role descriptions and generate improvement suggestions.",
       tech: ["GenAI", "Prompt Engineering", "Backend APIs"]
     }
-  ],
-  codingProfiles: [
-    {
-      icon: "code",
-      title: "LeetCode",
-      description: "Track my coding practice, problem-solving consistency, and algorithmic growth.",
-      link: "https://leetcode.com/u/yousuf89/"
-    },
-    {
-      icon: "code",
-      title: "GeeksforGeeks",
-      description: "My profile for DSA practice, coding articles, and technical learning progress.",
-      link: "https://www.geeksforgeeks.org/profile/mdyousufasif6"
-    }
   ]
 };
 
@@ -206,27 +192,6 @@ function renderProjects() {
   });
 }
 
-function renderCodingProfiles() {
-  const grid = document.getElementById("coding-grid");
-  grid.innerHTML = "";
-
-  config.codingProfiles.forEach((profile) => {
-    const card = document.createElement("article");
-    card.className = "project-card";
-    card.innerHTML = `
-      <div class="card-top">
-        <span class="icon-badge">${ICONS[profile.icon] || ICONS.code}</span>
-        <h3>${profile.title}</h3>
-      </div>
-      <p>${profile.description}</p>
-      <div class="project-tech">
-        <a class="btn btn-outline" href="${profile.link}" target="_blank" rel="noopener">Open Profile</a>
-      </div>
-    `;
-    grid.appendChild(card);
-  });
-}
-
 function attachResumeLink() {
   document.querySelectorAll(".resume-link").forEach((link) => {
     link.href = config.resumeUrl;
@@ -252,7 +217,6 @@ renderProjects();
 renderCardSection("experience-grid", config.experience);
 renderCardSection("achievement-grid", config.achievements);
 renderCardSection("certification-grid", config.certifications);
-renderCodingProfiles();
 attachResumeLink();
 handleProfilePhotoFallback();
 setYear();

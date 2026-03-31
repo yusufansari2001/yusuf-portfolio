@@ -140,6 +140,36 @@ h1 {
   flex-wrap: wrap;
 }
 
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.social-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  display: grid;
+  place-items: center;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  border-color: rgba(76, 201, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon img {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: block;
+}
+
 .hero-panel {
   display: grid;
   gap: 0.9rem;
