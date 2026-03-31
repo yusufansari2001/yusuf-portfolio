@@ -41,16 +41,22 @@ const config = {
   ],
   achievements: [
     {
-      title: "Backend Modernization Impact",
+      title: "Modernized Legacy Backend Architecture",
       description:
-        "Improved maintainability and delivery velocity by driving modular backend design, reusable components, and cleaner service boundaries for enterprise Java applications.",
-      tech: ["Maintainability", "Scalability", "Service Design"]
+        "Refactored monolithic Java services into modular Spring Boot components, improving maintainability by around 40% and accelerating feature delivery across backend workflows.",
+      tech: ["Java", "Spring Boot", "Modular Architecture"]
     },
     {
-      title: "Quality and Automation",
+      title: "Built Reliable Telecom Validation and Reconciliation Engines",
       description:
-        "Strengthened release reliability through API regression checks, CI/CD automation, and proactive validation controls in provisioning workflows.",
-      tech: ["Regression Testing", "CI/CD", "Reliability"]
+        "Designed scalable 3-way matching and provisioning validation logic for multi-vendor telecom inventory, reducing configuration risk and improving execution reliability.",
+      tech: ["System Integration", "Validation Rules", "Reliability"]
+    },
+    {
+      title: "Improved Release Confidence with Automation",
+      description:
+        "Implemented API regression checks and Jenkins-based CI/CD automation to detect service behavior changes early and reduce manual deployment and issue triage effort.",
+      tech: ["Jenkins", "CI/CD", "Regression Testing"]
     }
   ],
   certifications: [
